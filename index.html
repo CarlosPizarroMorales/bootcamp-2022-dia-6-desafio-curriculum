@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- El valor shortcut es propietario de IE y ningún otro browser lo pesca nah. ¿Usar o no usar?. -->
+    <link rel="shotcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+
+    <meta name="description" content="Desafío 1 del Modulo 2 unidad 1 Bootcamp Frontend 2022">
+    <meta name="author" content="Carlitros">
+
+    <!-- Google dice que las keywords ya no se usan. El meta description si.-->
+    <meta name="keywords" content="biografía, el partner, bla bla">
+    <style>
+        body {
+            max-width: 85vw;
+            margin-left: 7vw;
+        }
+
+        header>figure>img {
+            width: 100%;
+
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 10px 30px;
+        }
+
+        /* tambien sirve este selector como argumento del not() */
+        /* img:nth-child(1)) */
+        /* me quedó  bacán este selector pero no será necesario.
+        figure img:not(#imagen-banner) {
+            max-width: 30%;
+        }
+        */
+        footer p {
+            text-align: center;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        section figure {
+            display: inline-block;
+            width: 30%;
+            margin-right: 10px;
+        }
+
+        section figure img {
+            width: 100%
+        }
+    </style>
+
+    <title>Mi amigo Pelos</title>
+</head>
+
+<body>
+
+    <header id="up">
+        <!-- La especificacion indica que no es valido colocar dos niveles de heading (h1-h6) uno bajo el otro -->
+        <!-- ya que el segundo no cumpliría con el valor semántico de ser el título de una subsección afectando el uso  -->
+        <!-- de lectores de páginas web y otros user-agent. Para estos usos en que el h2, h3, etc solo tiene un valor  -->
+        <!-- complementario al heading principal (h1) la whatwg y la wcag recomiendan usar hgroup -->
+        <!-- Por qué no hacer: https://html.spec.whatwg.org/multipage/dom.html#semantics-2 -->
+        <!-- Cómo hacer:  https://html.spec.whatwg.org/multipage/sections.html#the-header-element-->
+        <hgroup>
+            <h1>Biografía de "mi gato"</h1>
+            <h2>Mi pana de penas y alegrías &#128525;</h2>
+        </hgroup>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#mi-bio">Sobre mi</a></li>
+                <li><a href="#fotos-de-mi">Admira mi belleza</a></li>
+                <li><a href="./familia.html">Conoce a mi familia</a></li>
+                <li><a href="#footer-section">Contacto</a></li>
+                <li><a href="https://www.google.com">Quiero salir de acá</a> (requerimiento 6)</li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img id="imagen-banner" src="./assets/img/fluffy-1.jpg" alt="ven a conocerme, soy Pelos">
+            <figcaption>Este soy yo cuando estoy feliz</figcaption>
+        </figure>
+    </header>
+
+    <main id="mi-bio">
+        <section>
+            <h2>En pocas palabras:</h2>
+            <ol>
+                <li>Soy un rey de 5 años.</li>
+                <li>Tengo un súbdito humano que me hace muchos cariños y me da todos los cuidados que le exijo.</li>
+                <li>Mi identificación veterinaria es Cat-813358-cute</li>
+                <li>Mi dirección es: Gran Vía 2379, Kittynksi, Kathlandia.</li>
+            </ol>
+            <h2>La historia de mi vida, contada por mi humano.</h2>
+            <p>
+                Y resulta que hace casi 5 años, me encontré a esta <del>odiosa</del> <a href="./assets/img/fluffy-7.jpg"
+                    target="_blank">hermosa
+                    bola
+                    de pelos</a>
+                envuelta en una frazada azul, dentro de una caja muy linda a la orilla de una vereda, que arriba
+                tenía
+                un
+                cartelito
+                amarrado que decía "quiéreme mucho" &#128562;. Cuando pasé junto a la hermosa caja, intenté hacerme
+                el
+                loco,
+                porque iba atrasado al colegio, y porque no llevaba mi trabajo de ciencias para el que la señorita
+                Susana ya me había dado 2 días extra, así que iba demasiado concentrado intentando elaborar una
+                buena
+                teoría sobre algún grupos de terroristas canibales que querían atraparme para robar las ideas de mi
+                trabajo científico.</p>
+            <p>Además estaba la situación de que mi mamá me había prohibido abrir paquetes o cajas extrañas tiradas
+                por
+                la calle, pero yo no tenía claro si una caja tan hermosa con un mensaje así habría sido considerado
+                una
+                caja extraña. Mmm... así que en realidad, podría abrirla, creo. Pero la verdad es que era tarde, y
+                mi
+                mamá me iba a castigar si volvía a llegar con un rojo a la casa y ya no me dejarían salir con el
+                escuadrón de aventuras en toda la semana. &#128561;</p>
+            <p>Por otro lado... ya iba atrasado, y si resultaba que la caja tenía un tesoro con piedras preciosas y
+                monedas de oro mi mamá estaría muy feliz porque podría comprarse el vestido del que hablaba todas
+                las
+                tardes
+                con la Raquelita y yo podría comprarme el viajero interestelar Max3000...&#128522; ok, el
+                viajero interestelar era todo el motivo que necesitaba para abrir la caja.</p>
+            <p>
+                Me dispuse a abrirla y entonces...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio facilis dolore vel adipisci,
+                accusamus soluta corporis dolores ea quae magnam omnis illum vero quisquam culpa alias, autem
+                accusantium dolorem!
+                Blanditiis ducimus nostrum numquam temporibus repudiandae rerum accusamus, nam aliquam provident ex
+                nisi beatae, pariatur iste! Nemo dolorem, minima quas beatae doloribus quaerat deleniti ad! Ab
+                itaque aspernatur repellendus at.
+                Quos corrupti eius voluptas illum alias quae ad rerum odio quasi suscipit repellendus magni
+                perspiciatis, quis molestiae provident nemo fugiat voluptates repudiandae fugit placeat sint quidem
+                dolores modi. Reprehenderit, atque!
+                Amet libero iste delectus, sequi ex nostrum ea neque nisi praesentium, deleniti officiis nesciunt
+                corporis vero quibusdam ipsam sit excepturi eligendi. Animi provident sequi pariatur expedita fuga
+                officia deserunt laborum.
+                Cumque odit voluptatum nostrum laudantium nobis suscipit quis, ipsa repellendus reprehenderit soluta
+                necessitatibus laboriosam dolor delectus minima id. Laboriosam, earum animi asperiores consequatur
+                harum at dolorem quas enim libero saepe?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio facilis dolore vel adipisci,
+                accusamus soluta corporis dolores ea quae magnam omnis illum vero quisquam culpa alias, autem
+                accusantium dolorem!
+                Blanditiis ducimus nostrum numquam temporibus repudiandae rerum accusamus, nam aliquam provident ex
+                nisi beatae, pariatur iste! Nemo dolorem, minima quas beatae doloribus quaerat deleniti ad! Ab
+                itaque aspernatur repellendus at.
+                Quos corrupti eius voluptas illum alias quae ad rerum odio quasi suscipit repellendus magni
+                perspiciatis, quis molestiae provident nemo fugiat voluptates repudiandae fugit placeat sint quidem
+                dolores modi. Reprehenderit, atque!
+                Amet libero iste delectus, sequi ex nostrum ea neque nisi praesentium, deleniti officiis nesciunt
+                corporis vero quibusdam ipsam sit excepturi eligendi. Animi provident sequi pariatur expedita fuga
+                officia deserunt laborum.
+                Cumque odit voluptatum nostrum laudantium nobis suscipit quis, ipsa repellendus reprehenderit soluta
+                necessitatibus laboriosam dolor delectus minima id. Laboriosam, earum animi asperiores consequatur
+                harum at dolorem quas enim libero saepe?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio facilis dolore vel adipisci,
+                accusamus soluta corporis dolores ea quae magnam omnis illum vero quisquam culpa alias, autem
+                accusantium dolorem!
+                Blanditiis ducimus nostrum numquam temporibus repudiandae rerum accusamus, nam aliquam provident ex
+                nisi beatae, pariatur iste! Nemo dolorem, minima quas beatae doloribus quaerat deleniti ad! Ab
+                itaque aspernatur repellendus at.
+                Quos corrupti eius voluptas illum alias quae ad rerum odio quasi suscipit repellendus magni
+                perspiciatis, quis molestiae provident nemo fugiat voluptates repudiandae fugit placeat sint quidem
+                dolores modi. Reprehenderit, atque!
+                Amet libero iste delectus, sequi ex nostrum ea neque nisi praesentium, deleniti officiis nesciunt
+                corporis vero quibusdam ipsam sit excepturi eligendi. Animi provident sequi pariatur expedita fuga
+                officia deserunt laborum.
+                Cumque odit voluptatum nostrum laudantium nobis suscipit quis, ipsa repellendus reprehenderit soluta
+                necessitatibus laboriosam dolor delectus minima id. Laboriosam, earum animi asperiores consequatur
+                harum at dolorem quas enim libero saepe?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio facilis dolore vel adipisci,
+                accusamus soluta corporis dolores ea quae magnam omnis illum vero quisquam culpa alias, autem
+                accusantium dolorem!
+                Blanditiis ducimus nostrum numquam temporibus repudiandae rerum accusamus, nam aliquam provident ex
+                nisi beatae, pariatur iste! Nemo dolorem, minima quas beatae doloribus quaerat deleniti ad! Ab
+                itaque aspernatur repellendus at.
+                Quos corrupti eius voluptas illum alias quae ad rerum odio quasi suscipit repellendus magni
+                perspiciatis, quis molestiae provident nemo fugiat voluptates repudiandae fugit placeat sint quidem
+                dolores modi. Reprehenderit, atque!
+                Amet libero iste delectus, sequi ex nostrum ea neque nisi praesentium, deleniti officiis nesciunt
+                corporis vero quibusdam ipsam sit excepturi eligendi. Animi provident sequi pariatur expedita fuga
+                officia deserunt laborum.
+                Cumque odit voluptatum nostrum laudantium nobis suscipit quis, ipsa repellendus reprehenderit soluta
+                necessitatibus laboriosam dolor delectus minima id. Laboriosam, earum animi asperiores consequatur
+                harum at dolorem quas enim libero saepe?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odio facilis dolore vel adipisci,
+                accusamus soluta corporis dolores ea quae magnam omnis illum vero quisquam culpa alias, autem
+                accusantium dolorem!
+                Blanditiis ducimus nostrum numquam temporibus repudiandae rerum accusamus, nam aliquam provident ex
+                nisi beatae, pariatur iste! Nemo dolorem, minima quas beatae doloribus quaerat deleniti ad! Ab
+                itaque aspernatur repellendus at.
+                Quos corrupti eius voluptas illum alias quae ad rerum odio quasi suscipit repellendus magni
+                perspiciatis, quis molestiae provident nemo fugiat voluptates repudiandae fugit placeat sint quidem
+                dolores modi. Reprehenderit, atque!
+                Amet libero iste delectus, sequi ex nostrum ea neque nisi praesentium, deleniti officiis nesciunt
+                corporis vero quibusdam ipsam sit excepturi eligendi. Animi provident sequi pariatur expedita fuga
+                officia deserunt laborum.
+                Cumque odit voluptatum nostrum laudantium nobis suscipit quis, ipsa repellendus reprehenderit soluta
+                necessitatibus laboriosam dolor delectus minima id. Laboriosam, earum animi asperiores consequatur
+                harum at dolorem quas enim libero saepe?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo, quo nisi aperiam nemo cupiditate
+                doloribus corporis accusantium, quibusdam eveniet distinctio amet eligendi. Ea nobis quisquam,
+                reprehenderit cum iste voluptatibus.
+                Explicabo vitae veniam, culpa nisi perspiciatis distinctio eaque exercitationem voluptate voluptatibus
+                ipsam cumque possimus, magni reiciendis impedit a soluta? Tempora deserunt cumque beatae non fugit
+                doloremque nulla quaerat veritatis voluptates!
+                Sint laborum unde fugiat quisquam veritatis ea fugit architecto doloremque temporibus impedit aut
+                distinctio, asperiores tempora quaerat eveniet recusandae inventore iure blanditiis voluptatem commodi
+                ab ipsa! Est maiores quo illo?
+                Enim officiis ea esse exercitationem dolor expedita provident eum beatae, quam quia, deleniti error
+                aperiam magni incidunt officia eaque fugit fuga libero aut? Sed, reprehenderit doloribus illum
+                accusantium praesentium ex.
+                Autem nesciunt iste esse possimus natus mollitia repellendus officiis modi! Odio incidunt hic atque ad,
+                harum assumenda minima suscipit ea deleniti, praesentium illo quae iusto. Iusto dolores tempore deleniti
+                modi.
+            </p>
+            <p>Bueno, y así es como es que ha estado todo este tiempo junto a mi, viviendo cada aventura de mi
+                vida. ¿Te
+                gustó su historia?
+            </p>
+        </section>
+
+        <!-- Esta seccion deberia ir en un aside, pero en mi caso, mis fotos son tan importantes que deben ir en main -->
+        <section id="fotos-de-mi">
+            <h2>Galeria para que puedas admirar mi belleza</h2>
+            <figure id="baby-pelos">
+                <img src="./assets/img/fluffy-7.jpg" alt="foto de mi hermosura cuando era pequeño">
+                <figcaption>Acá estoy cuando era un hermoso bebé</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/img/fluffy-2.jpg" alt="foto muy hermosa de mi persona">
+                <figcaption>Mi cara cuando tengo hambre</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/img/fluffy-4.jpg" alt="imagen de mi belleza sempiterna">
+                <figcaption>Hoy salí a jugar a la tierra con mis amigos.</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/img/fluffy-3.jpg" alt="admirame human@">
+                <figcaption>Cuando era un jovencito esplendoroso.</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/img/fluffy-5.jpg" alt="siendo maravilloso como siempre">
+                <figcaption>Ya no tengo hambre &#128559; ahora me duele la pancita... ¡Humanooo!</figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/img/fluffy-6.jpg" alt="mira pero que preciosura soy...">
+                <figcaption>Mi foto para el perfil de caTinder &#129316;</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer id="footer-section">
+        <p>Mi humano y yo 2028. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="./chamullo.html" target="_blank">Escribeme</a></li>
+            <li><a href="./chamullo.html" target="_blank">Donaciones de comida de gato</a></li>
+            <li><a href="./chamullo.html" target="_blank">Donaciones de oro y piedras preciosas para mi humano</a></li>
+            <li><a href="./chamullo.html" target="_blank">También aceptamos catcoin y NFTs</a></li>
+            <li><a href="#up">Inicio</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

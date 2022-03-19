@@ -1,0 +1,11 @@
+Requerimientos: 
+
+ok. 1. Contener la estructura básica de un archivo HTML
+ok. 2. head> titulo, codificación, favicon y metadatos.
+ok. 3. ¿Metadatos? (mal redactado) El html debe usar etiquetas (elementos) semánticos.
+ok. 4. Parrafos, debe tener parrafos bien formados.
+ok. 5. Aplicar correctamente jerarquía de h1-h6
+ok. 6. Al menos 1 enlace a otro sitio web. (google.com)
+ok. 7. Agregar imágenes usando rutas relativas.
+ok. 8. usar estructura li para hacer menú de navegación.
+
